@@ -3,16 +3,20 @@ import React, { useState, useMemo, createContext, useContext } from 'react';
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import { DashboardLayout } from './components/layout/DashboardLayout';
 import { LoginPage } from './pages/LoginPage';
-import { DashboardPage } from './pages/DashboardPage';
-import { OrdersPage } from './pages/OrdersPage';
-import { QuotationsPage } from './pages/QuotationsPage';
-import { CustomersPage } from './pages/CustomersPage';
-import { InventoryPage } from './pages/InventoryPage';
-import { FinancialsPage } from './pages/FinancialsPage';
+import DashboardPage from './pages/DashboardPage';
 import { ReportsPage } from './pages/ReportsPage';
-import { InvoicesPage } from './pages/InvoicesPage';
 import { SettingsPage } from './pages/SettingsPage';
-import { SupportPage } from './pages/SupportPage';
+import ItemsPage from './pages/ItemsPage';
+import VendorsPage from './pages/VendorsPage';
+import ProcurementPage from './pages/ProcurementPage';
+import InwardPage from './pages/InwardPage';
+import StoresPage from './pages/StoresPage';
+import JobsPage from './pages/JobsPage';
+import StockPage from './pages/StockPage';
+import TallyDataPage from './pages/TallyDataPage';
+import ReturnsPage from './pages/ReturnsPage';
+import AssetsPage from './pages/AssetsPage';
+import AmcPage from './pages/AmcPage';
 import { ToastType } from './components/ui/Toast';
 import { AppNotification } from './types';
 
@@ -115,15 +119,19 @@ const AppMain: React.FC = () => {
           <Route path="/login" element={<LoginPage />} />
           <Route path="/" element={<DashboardLayout />}>
             <Route index element={<DashboardPage />} />
-            <Route path="orders" element={<OrdersPage />} />
-            <Route path="quotations" element={<QuotationsPage />} />
-            <Route path="customers" element={<CustomersPage />} />
-            <Route path="inventory" element={<InventoryPage />} />
-            <Route path="financials" element={<FinancialsPage />} />
+            <Route path="items" element={<ItemsPage />} />
+            <Route path="vendors" element={<VendorsPage />} />
+            <Route path="procurement" element={<ProcurementPage />} />
+            <Route path="inward" element={<InwardPage />} />
+            <Route path="stores" element={<StoresPage />} />
+            <Route path="jobs" element={<JobsPage />} />
+            <Route path="stock" element={<StockPage />} />
+            <Route path="tally" element={<TallyDataPage />} />
+            <Route path="returns" element={<ReturnsPage />} />
+            <Route path="assets" element={<AssetsPage />} />
+            <Route path="amc" element={<AmcPage />} />
             <Route path="reports" element={<ReportsPage />} />
-            <Route path="invoices" element={<InvoicesPage />} />
             <Route path="settings" element={<SettingsPage />} />
-            <Route path="support" element={<SupportPage />} />
             <Route path="*" element={<Navigate to="/" replace />} />
           </Route>
         </Routes>

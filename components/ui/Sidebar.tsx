@@ -18,7 +18,7 @@ export const Sidebar: React.FC = () => {
             <span className="text-white font-bold text-sm">A</span>
           </div>
           <span className="text-lg font-bold tracking-tight text-slate-900">
-            Aether<span className="text-slate-400 font-medium">ERP</span>
+            Aureole<span className="text-slate-400 font-medium">Inventory</span>
           </span>
         </Link>
 

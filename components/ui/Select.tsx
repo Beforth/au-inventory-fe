@@ -154,7 +154,7 @@ export const Select: React.FC<SelectProps> = ({
       {label && (
         <label className="text-xs font-semibold text-slate-700 ml-0.5">
           {label}
-          {required && <span className="text-red-500 ml-1">*</span>}
+          {required && <span className="text-rose-500 ml-1">*</span>}
         </label>
       )}
       <div className={cn("relative", isCombobox && "group/combobox")} ref={selectRef}>

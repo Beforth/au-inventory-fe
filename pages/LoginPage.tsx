@@ -56,7 +56,7 @@ export const LoginPage: React.FC = () => {
               <span className="text-4xl font-bold text-white">A</span>
             </div>
             <div>
-              <h2 className="text-2xl font-bold text-slate-800">Aether ERP</h2>
+              <h2 className="text-2xl font-bold text-slate-800">Aureole Inventory</h2>
               <p className="text-sm text-slate-500 mt-1">Enterprise Resource Planning</p>
             </div>
             <div className="grid grid-cols-3 gap-4 max-w-sm mx-auto mt-8">
@@ -77,7 +77,7 @@ export const LoginPage: React.FC = () => {
               <div className="w-12 h-12 rounded-xl bg-blue-600 flex items-center justify-center shadow-sm">
                 <span className="text-white font-bold text-lg">A</span>
               </div>
-              <h1 className="text-2xl font-bold text-slate-900">AetherERP</h1>
+              <h1 className="text-2xl font-bold text-slate-900">Aureole Inventory</h1>
             </div>
             <h2 className="text-xl font-semibold text-slate-800">Welcome Back</h2>
             <p className="text-sm text-slate-600">Sign in to access the ERP dashboard</p>
